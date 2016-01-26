@@ -1,0 +1,19 @@
+#staticHeader {
+	margin: auto;
+	padding: 5;
+	width: 50%;
+	border: 2px solid black;
+	text-align: center;
+}
+
+#staticHeader ul {
+	list-style-type:none;
+	font-family: 
+}
+#staticHeader li {
+	display: inline-block;
+}
+
+#staticHeader li a{
+	text-decoration: none;
+}
