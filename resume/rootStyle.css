@@ -4,13 +4,13 @@ body{
 
 .clearfix:after{
 	display:block;
-	clear:both;
+	clear:both;		
 }
 
 .header{
-
-	box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+	/*box-shadow:0px 1px 3px rgba(0,0,0,0.2);*/
 	background:444456;
+	
 }
 
 .header img{
@@ -19,16 +19,19 @@ body{
 }
 
 .header img:hover{
-	width: 200px;
-	height: 200px;
-	transition: linear 0.2s;
+	/*width: 200px;
+	height: 200px;*/
+	box-shadow: 2px 1px 15px #000000;
+	transition: linear 0.4s;
 }
 
 .menu{
 	/*needs to not stack when window is resized*/
-	width: 51%;
+	width: 100%;
 	margin-left: 10px;
 	font-family: arial;
+	height: 10%;
+	
 }
 
 .menu li{
@@ -41,11 +44,14 @@ body{
 	color:#515151;
 }
 
-.menu li:hover >a, .menu .current-itme >a{
+.menu li:hover >a  /*, .menu .current-itme >a*/{
 	text-decoration:none;
 	color:#be5b7a;
+	/*text-shadow: horizontal vertical blur color, 2ndHorizontal 2ndVertical 2ndBlur 2ndColor */
+	text-shadow: 1px 2px 5px #acabaa;
 	font-size: 130%;
 	transition: linear 0.2s;
+	padding: auto;
 }
 .menu .arrow{
 	font-size:11px;
@@ -59,10 +65,13 @@ body{
 	display:inline-block;
 	position:relative;
 	font-size:19px;
+	border-bottom: 3px solid black;
 }
 
 .menu > ul > li> a {
-	padding:10px 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 25px;	
 	display:inline-block;
 	text-shadow:0px 1px 0px rgba(0,0,0,0.4);
 	text-decoration:none;
@@ -79,20 +88,22 @@ body{
 }
 
 .sub-menu{
-	width:300%;
-	padding:5px 15px 15px 5px;
+	width:250%;
+	padding: auto;
 	position:absolute;
 	top:100%;
-	/*left:60px;*/
+	margin-left: -60%;
+	margin-right: 100%;
 	z-index:-1;
 	opacity:0;
 	transition:opacity linear 0.25s;
-	
-	/*background:#2e2728;*/
 }
 
 .sub-menu li{
-	padding: 3px 3px 10px 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	display:inline-block;
 	/*box-shadow:0px 2px 3px rgba(0,0,0,0.2);*/
 }
@@ -110,14 +121,28 @@ body{
 /*------- MAIN BODY --------*/
 
 .mainBody{
-	position: relative;
-	overflow-x: hidden;
-	width: 45%;
-	height: 85%;
-	top: 5%;
+	position: relative;	
+	width: 45%;	
+	margin-top: 2%;
 	margin-left: 15%;
 	margin-right: 20%;
 	font-family: arial;
 	float: left;
 	background-color: green;
+	border-radius: 5px;
+	text-indent: 15px;
+}
+
+#rightSide {
+	border: 3px solid red;
+	position: absolute;
+	margin-left: 61%;
+	width: 32%;	
+}
+
+#rightSide iframe {
+	padding-left: 5px;
+	margin-left: 5px;
+	margin-bottom: 1px;
+	padding-bottom: 2px;
 }
