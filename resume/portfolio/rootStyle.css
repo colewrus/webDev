@@ -16,7 +16,6 @@ body{
 .header img{
 	position: relative;
 	margin-left: 25%;
-	transition: linear 0.3s;
 }
 
 .header img:hover{
@@ -134,7 +133,6 @@ body{
 	margin-top: 8%;
 	margin-left: 10%;
 	margin-right: 20%;
-	padding: 5px;
 	font-family: arial;
 	float: left;
 	background-color: green;
@@ -156,7 +154,6 @@ body{
 	margin-left: 60%;
 	width: 32%;	
 	margin-top: 8%;
-	
 }
 
 #rightSide iframe {
