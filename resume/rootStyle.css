@@ -31,7 +31,7 @@ body{
 .menu{
 	/*needs to not stack when window is resized*/
 	width: 100%;
-	margin-left: 10px;
+	margin-left: 15%;
 	font-family: arial;
 	height: 10%;
 	
@@ -130,9 +130,9 @@ body{
 
 .mainBody{
 	position: absolute;	
-	width: 45%;	
+	width: 55%;	
 	margin-top: 8%;
-	margin-left: 10%;
+	margin-left: 7%;
 	margin-right: 20%;
 	padding: 5px;
 	font-family: arial;
@@ -153,8 +153,8 @@ body{
 #rightSide {
 	border: 3px solid red;
 	position: absolute;
-	margin-left: 60%;
-	width: 32%;	
+	margin-left: 65%;
+	width: 20.5%;	
 	margin-top: 8%;
 	
 }
@@ -162,6 +162,8 @@ body{
 #rightSide iframe {
 	padding-left: 5px;
 	margin-left: 5px;
+	padding-right: 5px;
+	margin-right: 5px;
 	margin-bottom: 1px;
 	padding-bottom: 2px;
 }
