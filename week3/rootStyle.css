@@ -238,7 +238,7 @@ div#block2 ul li{
 }
 
 
-div#block2 a{
+div.altBody a{
 	text-decoration: none;
 	padding-top:5px;
 }
