@@ -168,13 +168,15 @@ body{
 
 /*------ALTERNATIVE BODY -------*/
 .altBody{
-	margin-top: 5%;
-	
+	margin-top: 5%;	
 	font-family: arial;	
 	width: 50%;
 	position: fixed;
 }
 
+.altBody a{
+	margin:0;
+}
 
 div#block1{
 	float: left;
@@ -186,6 +188,7 @@ div#block1{
 
 div#block1:hover{
 	background: rgba(100, 232, 221, 1);
+	transition: all 300ms ease-in-out;
 }
 
 div#block2{
@@ -196,25 +199,22 @@ div#block2{
 }
 
 div#block2:hover{
-	background: rgba(174, 240, 255, 1);	
+	background: rgba(174, 240, 255, 1);
+	transition: all 300ms ease-in-out;
 }
 
-div#block2:hover > #subBlock{
-	opacity: 1;
-	z-index: 5000;
-}
 
 div#block3{
 	clear:both;
 	position: static;
-	background: rgba(204, 178, 68, 0.5);
-	padding: 5px;
+	background: rgba(204, 178, 68, 0.5);	
 	overflow: hidden;
 	height: 100px;
 }
 
 div#block3:hover{
 	background: rgba(204,178,68, 1);
+	transition: all 300ms ease-in-out;
 }
 
 .altBody h3{
@@ -222,9 +222,6 @@ div#block3:hover{
 	padding: 1px;
 }
 
-.altBody p {
-	
-}
 	
 div#block2 ul{
 	list-style: none;
@@ -237,28 +234,36 @@ div#block2 ul li{
 	width: auto;
 }
 
-
+/*
 div.altBody a{
 	text-decoration: none;
-	padding-top:5px;
+	transition: all 300ms ease-in-out;
 }
+*/
 
 div#block2 a:hover{
 	font-weight: bold;
 	font-size: 1.1em;	
+	transition: all 300ms ease-in-out;
 }
 
 /*-----MEDIA QUERIES ----*/
-@media screen and (max-width:400px){
+@media (max-width:700px){
 	div#block1, div#block2{
 		float: none;
 		width: auto;
 	}
 	
+	#block1, #block2, #block3{
+		min-width: 200px;
+		float: none;
+		padding: none;
+	}
+	
 	.header img{
-		margin-left: 5%;
-		width: 25%;
-		height: 25%;
-		opacity: 0.3;
+		margin-left: 1%;
+		width: 15%;
+		height: 15%;
+		opacity: 0.4;
 	}
 }
