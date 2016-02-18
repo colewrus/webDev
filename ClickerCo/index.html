@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <style>
+    body { background-color: #e0e0e0; }
+    .centered { display: block; text-align: center; }
+    canvas { display: block; margin: auto; }
+  </style>
+
+</head>
+
+<body>
+  <div id="phaser" class="phaser"></div>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/phaser/2.4.4/phaser.min.js"></script>
+  <script type="text/javascript">
+    originalPhaserGame = Phaser.Game;
+
+    Phaser.Game = function(width, height, renderer, parent, state, transparent, antialias, physicsConfig) {
+      originalPhaserGame.call(this, width, height, renderer, 'phaser', state, transparent, antialias, physicsConfig);
+    }
+
+    Phaser.Game.prototype = Object.create(originalPhaserGame.prototype);
+    Phaser.Game.prototype.constructor = Phaser.Game;
+  </script>
+
+  <script src="game.js"></script>
+</body>
+</html>
