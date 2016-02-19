@@ -31,11 +31,7 @@ body{
 .menu{
 	/*needs to not stack when window is resized*/
 	width: 100%;
-<<<<<<< HEAD
-	margin-left: 10px;
-=======
 	margin-left: 15%;
->>>>>>> a401dc6801c2cd35a8c95de7d2c9822f3072bbd3
 	font-family: arial;
 	height: 10%;	
 }
@@ -133,15 +129,9 @@ body{
 
 .mainBody{
 	position: absolute;	
-<<<<<<< HEAD
-	width: 45%;	
-	margin-top: 8%;
-	margin-left: 10%;
-=======
 	width: 55%;	
 	margin-top: 8%;
 	margin-left: 7%;
->>>>>>> a401dc6801c2cd35a8c95de7d2c9822f3072bbd3
 	margin-right: 20%;
 	padding: 5px;
 	font-family: arial;
@@ -162,13 +152,8 @@ body{
 #rightSide {
 	border: 3px solid red;
 	position: absolute;
-<<<<<<< HEAD
-	margin-left: 60%;
-	width: 32%;	
-=======
 	margin-left: 65%;
 	width: 20.5%;	
->>>>>>> a401dc6801c2cd35a8c95de7d2c9822f3072bbd3
 	margin-top: 8%;
 	
 }
@@ -176,14 +161,8 @@ body{
 #rightSide iframe {
 	padding-left: 5px;
 	margin-left: 5px;
-<<<<<<< HEAD
-	margin-bottom: 1px;
-	padding-bottom: 2px;
-}
-=======
 	padding-right: 5px;
 	margin-right: 5px;
 	margin-bottom: 1px;
 	padding-bottom: 2px;
 }
->>>>>>> a401dc6801c2cd35a8c95de7d2c9822f3072bbd3
