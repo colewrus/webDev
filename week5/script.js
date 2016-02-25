@@ -22,6 +22,10 @@ $(document).ready(function() {
 	   console.log(thisWidth);
    });
    
+   $('.col-md-1').click(function(){
+		console.log('clicked me');
+   });
+   
 });
 
 //ask for array append code

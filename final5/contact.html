@@ -3,36 +3,69 @@
 <!-- MAIN URL -->
 
 <head>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
 <title>Colewrus & Co. - Home</title>
-
+<!-- Bootstrap loads -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+<!-- My stuff -->	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="../img/colewrusTP.png" sizes="16x16">
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="script.js"></script>-->
+	
 </head>
 <!-- This is the landing home page -->
 <body>
-	<div class="header">
-	<a href="#"><img src="../img/colewrusTP.png" alt="Colewrus & Co." width="125px" height="125px"></a>
-	<nav class="menu">		
-		<ul id="clear-fix">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="ugly.html">Ugly</a>
-				<ul class="sub-menu">
-					<li><a href="../week2/index.html">Week 2</a></li>
-					<li><a href="../week3/index.html">Week 3</a></li>
-					<li><a href="../week4/index.html">Week 4</a></li>
-					<li><a href="../week5/index.html">Week 5</a></li>
+	
+	<div class="container">
+	<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Project name</a>
+			  </div>
+			  <div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+				  <li class="active"><a href="#">Home</a></li>
+				  <li><a href="#">About</a></li>
+				  <li><a href="#">Contact</a></li>
 				</ul>
-			</li>
-			<li><a href="blog.html">Blog</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-		</ul>
-	</nav>
+			  </div><!--/.nav-collapse -->
+			</div><!--/.container-fluid -->
+		  </nav>
+	
+		<div class="row">
+			<div class="col-md-1"> 
+				<ul>
+					<li class="contact-options" id="resume">Resume</li>
+					<li class="contact-options" id="resume">Personal</li>
+				</ul>
+			</div>
+			<div class="col-md-10"> 
+				<object id="resume-pdf" data="resume.pdf" type="application/pdf" width="748px"> 
+					alt: <a href="resume.pdf"> test </a>
+				</object>
+			</div>
+		</div>
 	</div>
 	
-	<div class="body">
-		<p>Colewrus & Co. is currently used for a class. If you would like to see that classwork, feel free to check out the homework weeks above. Otherwise, hello!</p>
-	</div>
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="script.js"></script>
 </body>
+
+
 </html>
