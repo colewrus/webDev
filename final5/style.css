@@ -7,48 +7,68 @@
   border: 1px solid rgba(86,61,124,.2);
 }
 
-.col-md-10{
+.col-md-8{
+	background-color: #00ccc9;
+	border: none;
+	border-radius: 5px;
+	top: 10px;
 
 }
 
-.col-md-1{
+.col-md-2{
 	background-color: transparent;
 	border: none;
-
+	text-shadow: 1px 1px 2px #000;
+	font-size: 18px;
 }
 
+
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: #8ee3ff;
 }
 
 .navbar {
   margin-bottom: 20px;
+  margin-left: 15%;
 }
+
+
 .visible{
 	opacity: 0;
 }
 
-.contactTabs{
-	position: relative;
-	padding:none;
-	margin-left: 17px;
-}
-
 #resume{
 	z-index:2;
+	background-color: #99976c;	
+	display: block;
+	position: relative;
+	left: 15px;
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	text-align: right;
+	border-radius:5px;
 }
 
 #personal{
-	bottom: 20px;
-	
+	background-color: #ffbe4e;
+	position: relative;
+	left: 15px;
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	text-align: right;
+	border-radius:5px;
 }
 
-#resume-pdf{
-	position: relative;	
-	z-index: 500;
-}
+@media (max-width:992px){
+	#resume, #personal{
+		top: 25px;
+		width: 105%;
+		left: -20px;
+		text-align: center;
+	}
 
-#personal-area{
-	position:relative;	
 }
