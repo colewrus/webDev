@@ -1,0 +1,144 @@
+.clearfix:after{
+	display:block;
+	clear:both;		
+}
+
+.header img{
+	position: relative;
+	margin-left: 45%;
+	transition: linear 0.3s;
+}
+
+.header img:hover{
+	/*width: 200px;
+	height: 200px;*/
+	box-shadow: 2px 1px 15px #000000;
+	content:url("../week2/img/colwrus_co.png");
+	transition: linear 0.3s;	
+	animation: wiggle 0.5s infinite;
+}
+
+.menu{
+	/*needs to not stack when window is resized*/
+	width: 100%;
+	margin-left: 27%;
+	font-family: arial;
+	height: 10%;	
+}
+
+.menu li{
+	margin:0px;
+	list-style:none;
+}
+
+.menu li:hover{
+	animation: wiggle 0.5s infinite;
+}
+
+.menu a{
+	transition:all linear 0.15s;
+	color:#515151;
+}
+
+.menu li:hover >a  /*, .menu .current-itme >a*/{
+	text-decoration:none;
+	color:#be5b7a;
+	/*text-shadow: horizontal vertical blur color, 2ndHorizontal 2ndVertical 2ndBlur 2ndColor */
+	text-shadow: 1px 2px 5px #acabaa;
+	font-size: 130%;
+	transition: linear 0.2s;
+	padding: auto;	
+}
+
+.menu ul li:hover{
+	border: 0px;
+}
+
+.menu > ul > li{
+	float:left;
+	display:inline-block;
+	position:relative;
+	font-size:19px;
+	border-bottom: 3px solid black;
+}
+
+.menu > ul > li> a {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 25px;	
+	display:inline-block;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+	text-decoration:none;
+}
+
+
+/* Bottom Level */
+.menu li:hover .sub-menu{
+	z-index:1;
+	opacity:1;
+}
+
+.sub-menu{
+	width:250%;
+	padding: auto;
+	position:absolute;
+	top:100%;
+	margin-left: -60%;
+	margin-right: 100%;
+	z-index:-1;
+	opacity:0;
+	transition:opacity linear 0.25s;
+}
+
+.sub-menu li{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	display:inline-block;
+	/*box-shadow:0px 2px 3px rgba(0,0,0,0.2);*/
+}
+
+.sub-menu a{
+	text-decoration:none;
+}
+
+/* Main body */
+
+.body{
+	position: relative;
+	margin-top: 8%;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-family: Arial;
+	font-style: bold;
+	text-align: center;
+}
+
+/*week 5 divs */
+
+#wrapper{
+	margin-top: 8%;
+	margin-left: 10%;
+	padding: 1px;
+}
+
+.verticalSlide li{
+	display: inline-block;
+	border: 2px solid red;
+	width: 20%;
+	height: 500px;
+}
+
+/* Begin Keyframes */
+@keyframes wiggle{
+	0%{
+		left: 0px;
+	}
+	50%{
+		left: 8px;
+	}
+	100%{
+		left: 0px;
+	}
+}
