@@ -25,13 +25,39 @@
 
 body {
   background-color: #8ee3ff;
+  font-family: 'Righteous', cursive;
 }
 
 .navbar {
-  margin-bottom: 20px;
-  margin-left: 15%;
+  margin: 20px auto;
+  background-color: #ffbe4e;
 }
 
+.navbar-brand{
+	background-color: #ffbe4e;	
+}
+
+.navbar-default{
+	border-color: transparent;
+}
+
+#navbar ul li{
+	transform: skew(-15deg);
+	background: #14CC50;
+	margin-left: 5px;
+	transition: opacity 0.2s;
+	border-top-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+#navbar ul li a{
+	transform: skew(15deg);
+	font-weight: bold;
+}
+
+#navbar ul li:hover{
+	opacity: 0.6;
+}
 
 .visible{
 	opacity: 0;
@@ -51,6 +77,11 @@ body {
 	border-radius:5px;
 }
 
+#resume-pdf{
+	position:relative;
+	z-index: -1;
+}
+
 #personal{
 	background-color: #ffbe4e;
 	position: relative;
@@ -63,12 +94,24 @@ body {
 	border-radius:5px;
 }
 
+#personal-area{
+	padding: 3px;
+	text-indent: 15px;
+	position: relative;
+	font-size: 18px;
+	z-index: 3;
+}
+
 @media (max-width:992px){
 	#resume, #personal{
 		top: 25px;
-		width: 105%;
+		
 		left: -20px;
 		text-align: center;
 	}
 
 }
+
+/*personal and professional goes to style versus approach
+
+*/
