@@ -172,16 +172,16 @@ a#pdf:hover { background: #222; }
 .last { border: none; }
 .skills-list {  }
 .skills-list ul { margin: 0; }
-.skills-list li { margin: 3px 0; padding: 3px 0; }
+.skills-list li { margin: 1px 0; padding: 1px 0; }
 .skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
-.talent { width: 32%; float: left }
+.talent { width: 50%; float: left; position: relative; }
 .talent h2 { margin-bottom: 6px; }
 
 #srt-ttab { margin-bottom: 100px; text-align: center;  }
 #srt-ttab img.last { margin-top: 20px }
 
 /* --// override to force 1/8th width grids -- */
-.yui-gf .yui-u{width:80.2%;}
+.yui-gf .yui-u{width:100%;}
 .yui-gf div.first{width:12.3%;}
 
 /*End of resume layout*/
