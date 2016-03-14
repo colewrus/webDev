@@ -28,6 +28,12 @@ $(document).ready(function() {
 	$('#resume-pdf').addClass("visible");
 	$('#resume-pdf').css('pointer-events','none');
 	
+	/*
+	$(function(){
+		var bodyX = $('col-md-8').width();
+		$('.navbar').width(bodyX);
+	})
+	*/
 	
 	$('.col-md-1').click(function(){
 		console.log($(this).width());
