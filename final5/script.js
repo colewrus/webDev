@@ -6,6 +6,12 @@ $(document).ready(function() {
 		}
    });
    
+   	$(window).scroll(function(){
+		if ($(this).scrollTop() > 150){
+			console.log("scroll works");
+		}
+	});
+   
   /* $('#resume').click(function(){
 		$('#resume-area').removeClass("visible");
 		$('#personal-area').addClass("visible");

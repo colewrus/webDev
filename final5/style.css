@@ -44,7 +44,7 @@ body {
 
 .navbar {
 	margin: 10px auto;
-	background-color: transparent; /*#ffbe4e;*/
+	background-color: transparent;
 }
 
 .navbar-header{
@@ -80,6 +80,16 @@ body {
 	opacity: 0.9;
 }
 
+.scroll-nav{
+
+}
+
+/*End of Header */
+
+
+.row{
+	margin-top: 5%;
+}
 .visible{
 	opacity: 0;
 }
