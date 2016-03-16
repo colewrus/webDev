@@ -56,12 +56,8 @@ var playerText = {
 }
 var blank = [" "];
 
-
-
     
 ////Player
-
-
 
 var timeConstant = Phaser.Timer.SECOND;
 var timer = 0;
@@ -108,12 +104,9 @@ function create() {
     playerOptions.mediate = drawPlayerOptions(270, 440, 'mediate');
     playerOptions.withdraw = drawPlayerOptions(530, 440, 'withdraw');
     
-
-    
     pathManager();
     // roundManager(boss.q, 'q', 0);
     setText();
-
 }
 
 function update(){
@@ -124,14 +117,11 @@ function timeRun(){
     game.time.events.loop(timeConstant, function(){
         timer++;
         //changeButtons();
-
     }, this);
-
 }
 
 //PATH MANAGER
 function pathManager(){
-
     if(path === 0){
         disableButtons();
         game.time.events.add(Phaser.Timer.SECOND * 3, function(){
@@ -162,8 +152,7 @@ function pathManager(){
         }        
     }else{
         return null;
-    }
- 
+    } 
 }
 
 function roundManager(person, pathCount, disable){
@@ -175,18 +164,13 @@ function roundManager(person, pathCount, disable){
     }, this);  
 }
 
-
-
-
 //WRITE TEXT
-
 function setText(){
     var state = { font: "21px Arial", fill: "#19de65", wordWrap: true, wordWrapWidth: 300 };
     questionText.player = game.add.text(355, 270, '', state);
     questionText.player.stroke = "#000000";
     questionText.player.strokeThickness = 2;
     questionText.player.text = "";
-
 }
 
 function updateText(list, val, state){
@@ -225,7 +209,6 @@ function clearPlayerText(){
 }
 
 ///BUTTON DISPLAY FUNCTIONS
-
 function changeButtons(){
     var difference = timer - currentTime;
     if(difference === 5){

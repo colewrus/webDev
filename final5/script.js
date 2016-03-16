@@ -8,7 +8,11 @@ $(document).ready(function() {
    
    	$(window).scroll(function(){
 		if ($(this).scrollTop() > 150){
+			$('nav').addClass('scroll-fixed');
 			console.log("scroll works");
+		}else{
+			$('nav').removeClass('scroll-fixed');
+			console.log("top");
 		}
 	});
    

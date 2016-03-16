@@ -31,9 +31,7 @@ body {
 
 /* Header */
 
-.container-fluid{
-	margin-left: 20%;	
-}
+
 .navbar-default .navbar-nav>li>a {
     color: #b5F5ff;
 }
@@ -43,8 +41,8 @@ body {
 }
 
 .navbar {
-	margin: 10px auto;
-	background-color: transparent;
+	margin: 10px 25%;
+	background-color: transparent;	
 }
 
 .navbar-header{
@@ -80,8 +78,13 @@ body {
 	opacity: 0.9;
 }
 
-.scroll-nav{
-
+.scroll-fixed{
+	position: fixed;	
+	z-index: 1;
+	margin: 0;
+	background-color:  #FF692D;
+	border: 1px solid red;
+	width: 100%;
 }
 
 /*End of Header */
@@ -149,18 +152,26 @@ body {
 		width: 104%;
 	}
 	
+	.navbar-header, .navbar-brand {
+		transform: skew(0deg);
+	}
+	
 	.slanted{
-		/*transform: skew(15deg);*/		
+		transform: skew(0deg);
 		font-size: 18px;
 		border-top-left-radius: 3px;
 		border-bottom-right-radius: 3px;
+	}
+	.slanted a{
+		transform: skew(0deg);
 	}
 }
 
 
 @media (max-width: 768px){
 	.navbar{
-		background-color: #ffbe4e;
+		background-color: transparent;
+
 	}
 	ul.nav.navbar-nav{
 		overflow: hidden;
