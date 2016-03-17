@@ -7,7 +7,7 @@ $(document).ready(function() {
    });
    
    	$(window).scroll(function(){
-		if ($(this).scrollTop() > 150){
+		if ($(this).scrollTop() > 50){
 			$('nav').addClass('scroll-fixed');
 			console.log("scroll works");
 		}else{

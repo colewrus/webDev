@@ -42,6 +42,7 @@ body {
 .navbar {
 	margin: 10px 25%;
 	background-color: transparent;	
+	width: 100%;
 }
 
 .navbar-header{
@@ -66,6 +67,7 @@ body {
 	transition: opacity 0.2s;
 	border-top-left-radius: 8px;
 	border-bottom-right-radius: 8px;
+	border: none;
 }
 
 .slanted a{
@@ -86,6 +88,8 @@ body {
 	width: 100%;
 }
 
+
+
 /*End of Header */
 
 
@@ -97,7 +101,6 @@ body {
 }
 
 #resume{
-	z-index:2;
 	background-color: #FF692D;	
 	display: block;
 	position: relative;
@@ -110,10 +113,6 @@ body {
 	border-radius:5px;
 }
 
-#resume-pdf{
-	position:relative;
-	z-index: -1;
-}
 
 #personal{
 	background-color: #FFE619;
