@@ -1,8 +1,7 @@
 [class*="col-"] {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #eee;
-  background-color: rgba(86,61,124,.15);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: transparent;
   border: 1px solid #ddd;
   border: 1px solid rgba(86,61,124,.2);
 }
@@ -152,6 +151,10 @@ body {
 		width: 104%;
 	}
 	
+	.navbar{
+		margin: 0;
+	}
+	
 	.navbar-header, .navbar-brand {
 		transform: skew(0deg);
 	}
@@ -165,9 +168,16 @@ body {
 	.slanted a{
 		transform: skew(0deg);
 	}
+	
+	.navbar-collapse {
+		width: auto;
+		border-top: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
 }
 
-
+/*
 @media (max-width: 768px){
 	.navbar{
 		background-color: transparent;
@@ -186,5 +196,5 @@ body {
 		box-shadow: none;
 	}
 }
-/*personal and professional goes to style versus approach
+personal and professional goes to style versus approach
 */
