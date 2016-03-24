@@ -66,13 +66,13 @@ body {
 	text-decoration: none;
 }
 
-.slanted:hover{
-	opacity: 0.9;
+.any-menu:hover{
+	opacity: 0.8;
 }
 
 .scroll-fixed{
 	position: fixed;	
-	z-index: 1;
+	z-index: 20;
 	margin: 0px;
 	top: 0;
 	background-color:  #FF692D;
@@ -114,6 +114,7 @@ body {
 	padding-right: 10px;
 	text-align: right;
 	border-radius:5px;
+	margin-top: 5px;
 }
 
 #personal-area{
@@ -130,9 +131,63 @@ body {
 }
 
 /*Blog styling*/
+blockquote{
+	font-size: 16px;
+	padding: 5px 10px;
+	margin: 0 10px 10px;
+}
+
+#blog-head{
+	text-align: center;
+	color:#FF692D;
+}
+
+.blog-post{
+	margin-top:40px;
+	margin-bottom:40px;
+}
+
+.blog-post h2, h3, h4{
+	color:#011;
+}
+
+.blog-post h2{
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+	margin-top: 3px;
+}
+
+.blog-side{
+	position: fixed;
+}
+
+/*Footer styling*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  background-color: #f5f5f5;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+}
+
+.footer-container {
+  margin:1px auto;
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.footer-container img{
+	padding: 1px 10px;
+	width: 10%;
+}
 
 
-
+/*Media queries*/
 @media (max-width:992px){
 	#resume, #personal{
 		top: 25px;		
@@ -176,65 +231,6 @@ body {
 
 
 
-
-/*
- * Main column and sidebar layout
- */
-
-.blog-main {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-/* Sidebar modules for boxing content */
-.sidebar-module {
-  padding: 15px;
-  margin: 0 -15px 15px;
-}
-.sidebar-module-inset {
-  padding: 15px;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-}
-.sidebar-module-inset p:last-child,
-.sidebar-module-inset ul:last-child,
-.sidebar-module-inset ol:last-child {
-  margin-bottom: 0;
-}
-
-
-/* Pagination */
-.pager {
-  margin-bottom: 60px;
-  text-align: left;
-}
-.pager > li > a {
-  width: 140px;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 30px;
-}
-
-
-/*
- * Blog posts
- */
-
-
-/*
- * Footer
- */
-
-.blog-footer {
-  padding: 40px 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: 1px solid #e5e5e5;
-}
-.blog-footer p:last-child {
-  margin-bottom: 0;
-}
 
 /*
 @media (max-width: 768px){

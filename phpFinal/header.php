@@ -58,7 +58,7 @@
 		<ul class="menu">
 			<?php 
 				foreach($nav_list as $link => $title){
-					echo '<li class="slanted"><a href="';
+					echo '<li class="slanted any-menu"><a href="';
 					echo $link;
 					echo '">';
 					echo $title;

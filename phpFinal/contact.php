@@ -9,11 +9,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2"> 
-				<div id="resume">
+			</br>
+		
+				<div id="resume" class="any-menu">
 					Resume & Approach
 					<!--<img class="contactTabs" id="resume" src="img/contactTabB.png">-->
 				</div>
-				<div id="personal">
+				<div id="personal" class="any-menu">
 					My Style
 					<!--<img class="contactTabs" id="personal" src="img/contactTabP.png">-->
 				</div>
@@ -167,11 +169,6 @@
 		</div>
 	</div>
 	
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="script.js"></script>
-</body>
-</html>
+<?php 
+	include 'footer.php';
+?>	

@@ -25,8 +25,5 @@ $(document).ready(function() {
 	$('#resume-pdf').addClass("visible");
 	$('#resume-pdf').css('pointer-events','none');
 	
-	$('.col-md-1').click(function(){
-		console.log($(this).width());
-	})	
 });
 
