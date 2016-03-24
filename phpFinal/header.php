@@ -1,10 +1,10 @@
 <?php 
 	$nav_list = array(
-		'/index' => 'Home',
-		'/contact' => 'Contact',
-		'/portfolio' => 'Portfolio',
-		'/blog' =>'Blog',
-		'/ugly' =>'Ugly Box'
+		'/index.php' => 'Home',
+		'/contact.php' => 'Contact',
+		'/portfolio.php' => 'Portfolio',
+		'/blog.php' =>'Blog',
+		'/ugly.php' =>'Ugly Box'
 	);
 	
 ?>
@@ -46,6 +46,30 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
+  
+	<!--<div class="navbar-wrapper">-->
+	<nav class="navbar-wrapper">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<ul class="menu">
+			<?php 
+				foreach($nav_list as $link => $title){
+					echo '<li class="slanted"><a href="';
+					echo $link;
+					echo '">';
+					echo $title;
+					echo '</a></li>';
+				}		
+			?>
+		</ul>	
+	</nav>
+	<!--</div>end of navbar-wrapper-->
+  
+	<!--
     <div class="navbar-wrapper">
      	<nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -59,15 +83,15 @@
 			<a class="navbar-brand" href="#">Colewrus & Co</a>
 		  </div>
 		  <div id="navbar" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
+			<ul class="nav navbar-nav">-->
 				<?php 
-					foreach($nav_list as $link => $title){
+				/*	foreach($nav_list as $link => $title){
 						echo '<li class="slanted"><a href="';
 						echo $link;
 						echo '">';
 						echo $title;
 						echo '</a></li>';
-					}		
+					}		*/
 				?>
 			
 			<!--

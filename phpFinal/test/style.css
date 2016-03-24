@@ -1,0 +1,11 @@
+.navbar{
+	border: 1px solid red;
+	text-align: center;
+}
+
+.menu{
+	border: 1px solid green;
+	width: 20%;
+	display: inline-block;
+	margin: auto;
+}

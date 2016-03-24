@@ -7,57 +7,47 @@
 }
 
 .col-md-8{
-	background-color: #00ccc9;
 	background-color: transparent;
 	border: none;
-	border-radius: 5px;
 	top: 10px;
-
 }
 
 .col-md-2{
 	background-color: transparent;
 	border: none;
-	text-shadow: 1px 1px 2px #000;
-	font-size: 18px;
 }
 
 
 body {
   background-color: #b5F5ff;
-  font-family: 'Righteous', cursive;
+  font-family: 'Righteous', Times, serif;
 }
 
 /* Header */
 
-
+/*
 .navbar-default .navbar-nav>li>a {
     color: #b5F5ff;
 }
 
 .navbar-default .navbar-brand {
     color: #b5F5ff;
+}*/
+
+.navbar-wrapper {
+	background-color: transparent;
+	text-align: center;
 }
 
-.navbar {
+.menu{
 	margin: 10px auto;
-	background-color: transparent;	
-	width: 100%;
+	display: inline-block;
 }
 
-.navbar-header{
-	background-color: #FF692D;	
-	transform: skew(-15deg);
-	border-radius:8px;
-}
-
-.navbar-brand{
-	transform: skew(15deg);
-	padding-left: 25px;
-}
-
-.navbar-default{
-	border-color: transparent;
+.menu li{
+	display: inline;
+	padding: 5px;
+	font-size: 2em;
 }
 
 .slanted{
@@ -72,7 +62,8 @@ body {
 
 .slanted a{
 	transform: skew(15deg);
-	font-weight: bold;
+	color: #b5F5ff;
+	text-decoration: none;
 }
 
 .slanted:hover{
@@ -82,15 +73,13 @@ body {
 .scroll-fixed{
 	position: fixed;	
 	z-index: 1;
-	margin: 0;
+	margin: 0px;
 	top: 0;
 	background-color:  #FF692D;
 	border: 1px solid red;
 	width: 100%;
+	text-align: center;
 }
-
-
-
 /*End of Header */
 
 
@@ -116,7 +105,7 @@ body {
 
 
 #personal{
-	background-color: #FFE619;
+	background-color: #FF692D;
 	position: relative;
 	left: 15px;
 	color: #fff;
@@ -140,6 +129,7 @@ body {
 	display: none;
 }
 
+/*Blog styling*/
 
 
 
@@ -151,12 +141,18 @@ body {
 		width: 104%;
 	}
 	
-	.navbar{
-		margin: 0;
+	.navbar-wrapper{
+		position: fixed;	
+		z-index: 1;
+		margin: 0px;
+		top: 0;
+		background-color:  #FF692D;
+		border: 1px solid red;
+		width: 100%;		
 	}
 	
-	.navbar-header, .navbar-brand {
-		transform: skew(0deg);
+	.menu li{
+		display: none;
 	}
 	
 	.slanted{
@@ -177,24 +173,93 @@ body {
 	}
 }
 
+
+
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
 /*
 @media (max-width: 768px){
-	.navbar{
-		background-color: transparent;
-
-	}
-	ul.nav.navbar-nav{
-		overflow: hidden;
+	.navbar-wrapper{
+		position: fixed;	
+		z-index: 1;
+		margin: 0px;
+		top: 0;
+		background-color:  #FF692D;
+		border: 1px solid red;
+		width: 100%;		
 	}
 }
 
 @media (min-width: 768px){	
-	.navbar-collapse {
-		width: auto;
-		border-top: 0;
-		-webkit-box-shadow: none;
-		box-shadow: none;
+	.navbar-wrapper{
+		position: fixed;	
+		z-index: 1;
+		margin: 0px;
+		top: 0;
+		background-color:  #FF692D;
+		border: 1px solid red;
+		width: 100%;		
 	}
 }
+
 personal and professional goes to style versus approach
 */
