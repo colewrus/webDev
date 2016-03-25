@@ -3,24 +3,16 @@
 	include 'header.php';
 ?>
 
-	</br>
-	</br>
+
 	<!-- ABOUT ME AREA -->
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2"> 
-			</br>
-		
-				<div id="resume" class="any-menu">
-					Resume & Approach
-					<!--<img class="contactTabs" id="resume" src="img/contactTabB.png">-->
-				</div>
-				<div id="personal" class="any-menu">
-					My Style
-					<!--<img class="contactTabs" id="personal" src="img/contactTabP.png">-->
-				</div>
+				<h1>Colewrus & Co. Contact</h1>
 			</div>
+			
 			<div class="col-md-8"> 
+				</br>
 				<div id='personal-area'>
 					<p>Hi there! My name is Cole and if you've found this then the game is up.
 					Which is convenient as I am an aspiring game designer. Not quite it the hobbyist way,
@@ -164,7 +156,15 @@
 				
 			</div>
 			<div class="col-md-2">
-
+				</br>
+				<div id="resume" class="right-butt any-menu">
+					Resume & Approach
+					<!--<img class="contactTabs" id="resume" src="img/contactTabB.png">-->
+				</div>
+				<div id="personal" class="right-butt any-menu">
+					My Style
+					<!--<img class="contactTabs" id="personal" src="img/contactTabP.png">-->
+				</div>
 			</div>
 		</div>
 	</div>

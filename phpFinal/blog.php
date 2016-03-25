@@ -7,9 +7,9 @@
  <div class="container">
 	<div class="row">
 		<div class="col-md-2"> 
-			<h1 id="blog-head">Colewrus & Co. Blog!</h1>
+			<h1>Colewrus & Co. Blog!</h1>
 		</div>
-		<div class="col-md-8"> 
+		<div class="col-md-8"> <!-- BLOG ENTRIES GO HERE -->
 			<a name="post1"><div class="blog-post"></a>
 				<h2>Welcome to the Game:</br>Mechanics Shape the Community of Play</h2>
 				<blockquote>
@@ -30,7 +30,7 @@
 				<p>There's a curious reaction by many players to immediately label any given game community
 				"toxic" which is not always untrue but doesn't actually say much about the community itself or the game.
 				<i>Rust</i> is a game of iteration, the forced developer wipes of all servers make this an absolute, it is the proverbial
-				"death and taxes" of the game world. This iteration is a key part of the play philosophy created by the community
+				"death and taxes" of the game world. This iteration is also a key part of the play philosophy created by the community
 				through the mechanics.</p> 
 				
 				<p>There are only incentives to kill individuals on sight in <i>Rust</i> because the unarmed and naked man
@@ -70,8 +70,8 @@
 			
 				<h4>Entries</h4>
 				<ol class="list-unstyled">
-					<li><a href="#post1">Latest</a></li>
-					<li><a href="#post0">Second Latest</a></li>
+					<li class="right-butt"><a href="#post1">Latest</a></li>
+					<li class="right-butt"><a href="#post0">Second Latest</a></li>
 				</ol>
 			</div>
 		</div>

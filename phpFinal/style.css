@@ -9,7 +9,7 @@
 .col-md-8{
 	background-color: transparent;
 	border: none;
-	top: 10px;
+	top: 30px;
 }
 
 .col-md-2{
@@ -17,6 +17,10 @@
 	border: none;
 }
 
+.col-md-2 h1{
+	text-align: center;
+	color:#FF692D;
+}
 
 body {
   background-color: #b5F5ff;
@@ -90,31 +94,25 @@ body {
 	opacity: 0;
 }
 
-#resume{
+.right-butt{
 	background-color: #FF692D;	
 	display: block;
 	position: relative;
 	left: 15px;
 	color: #fff;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 10px;
-	text-align: right;
+	padding: 5px 10px;
+	text-align: left;
 	border-radius:5px;
+	margin-top: 5px;
+}
+
+#resume{
+
 }
 
 
 #personal{
-	background-color: #FF692D;
-	position: relative;
-	left: 15px;
-	color: #fff;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 10px;
-	text-align: right;
-	border-radius:5px;
-	margin-top: 5px;
+
 }
 
 #personal-area{
@@ -159,6 +157,14 @@ blockquote{
 
 .blog-side{
 	position: fixed;
+}
+
+.list-unstyled {
+    padding: 0;
+    margin-left: -15px;
+    margin-right: 25px;
+    display: block;
+    list-style: none;
 }
 
 /*Footer styling*/
