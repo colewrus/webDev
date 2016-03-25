@@ -21,6 +21,18 @@ $(document).ready(function() {
 			$('#personal-area').html($('#personal-area').html()).show().siblings('div').hide();
 		}
 	});      
+	
+	$('button').click(function(){
+		if($('button').hasClass('collapsed')){
+			console.log('hit');
+			$('button').removeClass('collapsed');
+			$('.menu li').css('display', 'list-item');
+		}
+		if($('button').hasClass('drop-down')){
+			$('button').addClass('collapsed');
+			$('.menu li').css('display', 'none');
+		}
+	});
    
 	$('#resume-pdf').addClass("visible");
 	$('#resume-pdf').css('pointer-events','none');
