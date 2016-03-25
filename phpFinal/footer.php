@@ -4,7 +4,8 @@
       <div class="footer-container">
 		<a href="https://github.com/colewrus" class="any-menu" target="_blank"><img src="img/githubR.png"></a>
 		<a href="https://www.youtube.com/channel/UCc6NUmZkmvJ8sAAOjsedoUg" class="any-menu" target="_blank"><img src="img/youtubeR.png"></a>
-        <!--<p class="text-muted">Place sticky footer content here.</p>-->
+        <a href="#"><img src="img/yelp-iOS.png" onmouseover="this.src='img/kappa.png'" onmouseout="this.src='img/yelp-iOS.png'"></a>
+		<!--<p class="text-muted">Place sticky footer content here.</p>-->
       </div>
     </footer>
 

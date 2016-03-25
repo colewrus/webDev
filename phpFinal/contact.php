@@ -52,19 +52,15 @@
 										<div class="yui-u">
 
 												<div class="talent">
-													<h2>Web Design</h2>
+													<h2>Game Design & Research</h2>
 													<p>Assertively exploit wireless initiatives rather than synergistic core competencies.	</p>
 												</div>
 
 												<div class="talent">
-													<h2>Interface Design</h2>
+													<h2>Event Planning and Management</h2>
 													<p>Credibly streamline mission-critical value with multifunctional functionalities.	 </p>
 												</div>
 
-												<div class="talent">
-													<h2>Project Direction</h2>
-													<p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
-												</div>
 										</div>
 									</div><!--// .yui-gf -->
 
