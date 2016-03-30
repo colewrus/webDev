@@ -18,7 +18,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../img/colewrusTP.png">
+    <link rel="icon" href="/img/colewrusTP.png">
     <title><?php echo $page_title; ?></title>
 
 
@@ -49,7 +49,10 @@
   
 	<!--<div class="navbar-wrapper">-->
 	<nav class="navbar-wrapper">
-		<button type="button" class="navbar-toggle collapsed">
+		<div>
+			<h1> Menu</h1>
+		</div>
+		<button type="button" class="navbar-toggle any-menu collapsed">
 		  <span class="sr-only">Toggle navigation</span>
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>

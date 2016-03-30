@@ -26,9 +26,11 @@ $(document).ready(function() {
 		if($('button').hasClass('collapsed')){
 			console.log('hit');
 			$('button').removeClass('collapsed');
+			$('button').addClass('drop-down');
 			$('.menu li').css('display', 'list-item');
 		}
-		if($('button').hasClass('drop-down')){
+		else if($('button').hasClass('drop-down')){
+			$('button').removeClass('drop-down');
 			$('button').addClass('collapsed');
 			$('.menu li').css('display', 'none');
 		}
