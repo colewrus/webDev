@@ -89,6 +89,14 @@ body {
 
 }
 
+.hidden{
+	display: none;
+}
+
+.navbar-wrapper div {
+	display: none;
+	position: fixed;
+}
 /*End of Header */
 
 
@@ -219,9 +227,9 @@ blockquote{
 	}
 	
 	.navbar-wrapper div{
-		margin: 0;
-		position: relative;
-		width: 100%;
+		margin: -5px 55% 0px 45%;
+		width: auto;
+		display: block;
 	}
 
 	

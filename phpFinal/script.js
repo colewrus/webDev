@@ -28,11 +28,13 @@ $(document).ready(function() {
 			$('button').removeClass('collapsed');
 			$('button').addClass('drop-down');
 			$('.menu li').css('display', 'list-item');
+			$('.navbar-wrapper div').addClass('visible');
 		}
 		else if($('button').hasClass('drop-down')){
 			$('button').removeClass('drop-down');
 			$('button').addClass('collapsed');
 			$('.menu li').css('display', 'none');
+			$('.navbar-wrapper div').removeClass('visible');
 		}
 	});
    
