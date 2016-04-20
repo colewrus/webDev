@@ -1,0 +1,20 @@
+help.txt
+
+phpMyAdmin->wordpress->export->custom-display all possible options->save output to a file
+"GO"
+Should give you "wordpress.sql"
+
+Under INSERT INTO
+'siteurl' & 'home'
+- change the url to your website using find and replace "localhost/wordpress" ->
+your website
+
+drag and drop whole localhost wordpress into a hosted folder
+
+create a database through hostGator
+
+go into wp-config.phpMyAdmin-
+change 'DB_NAME' to the database name
+'DB_USER' to username
+
+'DB_PASSWORD' to the password you set

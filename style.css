@@ -1,112 +1,301 @@
-.clearfix:after{
-	display:block;
-	clear:both;		
+[class*="col-"] {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
 }
 
-.header img{
-	position: relative;
-	margin-left: 45%;
-	transition: linear 0.3s;
+.col-md-8{
+	background-color: transparent;
+	border: none;
+	top: 30px;
 }
 
-.header img:hover{
-	/*width: 200px;
-	height: 200px;*/
-	box-shadow: 2px 1px 15px #000000;
-	content:url("week2/img/colwrus_co.png");
-	transition: linear 0.3s;	
+.col-md-2{
+	background-color: transparent;
+	border: none;
+}
+
+.col-md-2 h1{
+	text-align: center;
+	color:#FF692D;
+}
+
+body {
+  background-color: #b5F5ff;
+  font-family: 'Righteous', Times, serif;
+}
+
+/* Header */
+
+/*
+.navbar-default .navbar-nav>li>a {
+    color: #b5F5ff;
+}
+
+.navbar-default .navbar-brand {
+    color: #b5F5ff;
+}*/
+
+.navbar-wrapper {
+	background-color: transparent;
+	text-align: center;
 }
 
 .menu{
-	/*needs to not stack when window is resized*/
-	width: 100%;
-	margin-left: 27%;
-	font-family: arial;
-	height: 10%;	
+	margin: 10px auto;
+	display: inline-block;
 }
 
 .menu li{
-	margin:0px;
-	list-style:none;
+	display: inline-block;
+	padding: 5px;
+	font-size: 2em;
 }
 
-.menu a{
-	transition:all linear 0.15s;
-	color:#515151;
+.slanted{
+	transform: skew(-15deg);
+	background: #FF692D;
+	margin-left: 5px;
+	transition: opacity 0.2s;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border: none;
 }
 
-.menu li:hover >a  /*, .menu .current-itme >a*/{
-	text-decoration:none;
-	color:#be5b7a;
-	/*text-shadow: horizontal vertical blur color, 2ndHorizontal 2ndVertical 2ndBlur 2ndColor */
-	text-shadow: 1px 2px 5px #acabaa;
-	font-size: 130%;
-	transition: linear 0.2s;
-	padding: auto;	
+.slanted a{
+	transform: skew(15deg);
+	display: inline-block;
+	color: #b5F5ff;
+	text-decoration: none;
 }
 
-.menu ul li:hover{
-	border: 0px;
+.any-menu:hover{
+	opacity: 0.8;
 }
 
-.menu > ul > li{
-	float:left;
-	display:inline-block;
-	position:relative;
-	font-size:19px;
-	border-bottom: 3px solid black;
-}
-
-.menu > ul > li> a {
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 25px;	
-	display:inline-block;
-	text-shadow:0px 1px 0px rgba(0,0,0,0.4);
-	text-decoration:none;
-}
-
-
-/* Bottom Level */
-.menu li:hover .sub-menu{
-	z-index:1;
-	opacity:1;
-}
-
-.sub-menu{
-	width:250%;
-	padding: auto;
-	position:absolute;
-	top:100%;
-	margin-left: -60%;
-	margin-right: 100%;
-	z-index:-1;
-	opacity:0;
-	transition:opacity linear 0.25s;
-}
-
-.sub-menu li{
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	display:inline-block;
-	/*box-shadow:0px 2px 3px rgba(0,0,0,0.2);*/
-}
-
-.sub-menu a{
-	text-decoration:none;
-}
-
-/* Main body */
-
-.body{
-	position: relative;
-	margin-top: 8%;
-	margin-left: 15%;
-	margin-right: 15%;
-	font-family: Arial;
-	font-style: bold;
+.scroll-fixed{
+	position: fixed;	
+	z-index: 20;
+	margin: 0px;
+	top: 0;
+	background-color:  #FF692D;
+	border: 1px solid red;
+	width: 100%;
 	text-align: center;
+}
+
+.drop-down{
+
+}
+
+.hidden{
+	display: none;
+}
+
+.mobile-menu {
+	display: none;
+	position: fixed;
+}
+/*End of Header */
+
+
+.row{
+	margin-top: 5%;
+}
+.visible{
+	opacity: 0;
+}
+
+.right-butt{
+	background-color: #FF692D;	
+	display: block;
+	position: relative;
+	left: 15px;
+	color: #fff;
+	padding: 5px 10px;
+	text-align: left;
+	border-radius:5px;
+	margin-top: 5px;
+	font-size: 1.1em;
+}
+
+#resume{
+
+}
+
+
+#personal{
+
+}
+
+#personal-area{
+	padding: 3px;
+	text-indent: 15px;
+	position: relative;
+	font-size: 18px;
+	z-index: 3;
+	height: auto;
+}
+
+#resume-area{
+	display: none;
+}
+
+/*Blog styling*/
+blockquote{
+	font-size: 16px;
+	padding: 5px 10px;
+	margin: 0 10px 10px;
+}
+
+#blog-head{
+	text-align: center;
+	color:#FF692D;
+}
+
+.blog-post{
+	margin-top:40px;
+	margin-bottom:40px;
+}
+
+.blog-post h2, h3, h4{
+	color:#011;
+}
+
+.blog-post h2{
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+	margin-top: 3px;
+}
+
+.blog-side{
+	position: fixed;
+}
+
+.list-unstyled {
+    padding: 0;
+    margin-left: -15px;
+    margin-right: 25px;
+    display: block;
+    list-style: none;
+}
+/*-------------END OF BLOG STYLE-----------*/
+
+/*-------------START OF PORTFOLIO----------*/
+#game-area ul li{
+	display: inline-block;
+	width: 47%;
+}
+
+#game-area ul li div{
+	border: 3px solid #FF692D;
+	background-color: rgba(119, 120, 153, 0.4); 
+	padding: 1px 5px;
+	line-height: 5;
+	margin: 5px;
+	border-radius: 5px;	
+}
+
+#game-area ul li div h2{
+	text-align: center;
+}
+
+/*-------------END OF PORTFOLIO----------*/
+
+/*Footer styling*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  background-color: #f5f5f5;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+}
+
+.footer-container {
+  margin:1px auto;
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.footer-container img{
+	padding: 1px 10px;
+	width: 65px;
+	height: 45px;
+}
+
+/*Media queries*/
+@media (max-width:768px){
+	#resume, #personal{
+		top: 25px;		
+		left: -15px;
+		text-align: center;
+		width: 104%;
+	}
 	
+	.navbar-wrapper{
+		position: fixed;	
+		z-index: 1;
+		margin: 0;		
+		top: 0;
+		background-color:  #FF692D;
+		border: 1px solid red;
+		width: 100%;		
+	}
+	
+	.mobile-menu{
+		margin: -5px 55% 0px 45%;
+		width: auto;
+		display: block;
+	}
+
+	
+	/*this is the navbar button class name*/
+	.navbar-toggle .icon-bar {
+		display: block;
+		width: 22px;
+		height: 3px;
+		border-radius: 1px;
+		background-color: #000;
+	}
+	
+	.navbar-toggle {
+		position: relative;
+		float: right;
+		padding: 9px 10px;
+		margin-top: 8px;
+		margin-right: 15px;
+		margin-bottom: 8px;
+		background-color: #b5F5ff;
+		background-image: none;
+		border: 1px solid rgb(218, 218, 218);
+		border-radius: 4px;
+	}
+	
+	.row{
+		margin-top: 10%;
+	}
+	
+	.menu li{
+		/*display: list-item;*/
+		display:none;
+		list-style: none;
+	}
+	
+	.slanted{
+		transform: skew(0deg);
+		font-size: 18px;
+		border-top-left-radius: 3px;
+		border-bottom-right-radius: 3px;
+	}
+	.slanted a{
+		transform: skew(0deg);
+	}
+
 }
